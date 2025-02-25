@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="dialog-wrapper">
+            <img src="images/X.svg" alt="close" class="close-modal"/>
+        <h2>
+            Login
+            <span>Register</span>
+        </h2>
+        <div class="form-wrapper">
+            <p>
+                Enter your email and password to register.
+            </p>
+            <form name="register" action="#" method="post">
+                <input type="text" name="username" placeholder="Username" class="input-text" />
+                <input type="email" name="email" placeholder="Enter your email address" class="input-email" />
+                <input type="password" name="password" placeholder="Password" class="input-password" />
+                <input type="password" name="password" placeholder="Confirm Password" class="input-confirm-password" />
+                <button type="submit" class="btn">Register</button>
+            </form>
+        </div>
+            <p class="text">
+                Or register with
+            </p>
+        <div class="reg-wrapper">
+            <div class="google-reg-wrapper">
+                <img src="images/Group.svg" alt="Google icon" />
+                <a href="#" title="Sign with Google" target="_blank">Continue with Google</a>
+            </div>
+            <img src="images/Vector.svg" alt="Facebook icon" />
+            <a href="#" title="Sign with Facebook" target="_blank">Continue with Facebook</a>
+        </div>
+    </div>
+</body>
+</html>
