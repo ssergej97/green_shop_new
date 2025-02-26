@@ -1,0 +1,258 @@
+.catalog .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 94px;
+}
+.catalog .container h3 {
+  flex-basis: 310px;
+  margin-left: 18px;
+  margin-bottom: 7px;
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+}
+.catalog .container .categories {
+  max-width: 310px;
+  padding-top: 14px;
+  background-color: #fbfbfb;
+}
+.catalog .container .categories ul {
+  margin-bottom: 377px;
+  margin-left: 30px;
+}
+.catalog .container .categories ul li a {
+  text-decoration: none;
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 267%;
+  color: #3d3d3d;
+  transition: 0.4s;
+}
+.catalog .container .categories ul li a:hover {
+  font-weight: 700;
+  color: #46a358;
+  transition: 0.4s;
+}
+
+.catalog .products {
+  max-width: 840px;
+}
+
+.catalog .products .products_sorting {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 31px;
+}
+
+.catalog .products .products_sorting ul li a {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 107%;
+  color: #3d3d3d;
+  transition: 0.4s;
+  text-decoration: none;
+  margin-right: 40px;
+}
+
+.catalog .products .products_sorting ul li a:hover {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 107%;
+  color: #46a358;
+  transition: 0.4s;
+  text-decoration: none;
+  border-bottom: 2px solid #46a358;
+  width: 65px;
+  height: 1px;
+}
+
+.catalog .products .products_sorting ul {
+  display: flex;
+}
+
+.catalog .products .products_sorting p {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 107%;
+  color: #3d3d3d;
+}
+
+.catalog .products .products_cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.catalog .products .products_cards .card {
+  flex-basis: 258px;
+  margin-bottom: 70px;
+  border-top: 1px solid transparent;
+  position: relative;
+}
+
+.catalog .products .products_cards .card ul {
+  display: flex;
+  position: relative;
+}
+
+.catalog .products .products_cards .card ul li {
+  position: absolute;
+  left: 67px;
+  top: 260px;
+  padding: 6px 8px;
+  display: inline-block;
+  border-radius: 4px;
+  background: #fff;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.catalog .products .products_cards .card:hover ul li {
+  position: absolute;
+  left: 67px;
+  top: 260px;
+  padding: 6px 8px;
+  display: inline-block;
+  border-radius: 4px;
+  background: #fff;
+  opacity: 1;
+  transition: 0.4s;
+}
+
+.catalog .products .products_cards .card ul li:hover svg path {
+  fill: #46A358;
+  transition: 0.4s;
+}
+
+.catalog .products .products_cards .card ul li svg path {
+  transition: 0.4s;
+}
+
+.catalog .products .products_cards .card ul li:nth-child(2) {
+  margin-left: 45px;
+}
+
+.catalog .products .products_cards .card ul li:nth-child(3) {
+  margin-left: 90px;
+}
+
+.catalog .products .products_cards .card:hover {
+  border-top: 1px solid #46A358;
+}
+
+.catalog .products .products_cards .card .discount {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  color: #fff;
+  background-color: #46A358;
+  padding: 6px 8px;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 14px;
+}
+
+.catalog .products .products_cards .card a img {
+  width: 258px;
+  margin-bottom: 12px;
+  background-color: #fbfbfb;
+}
+
+.catalog .products .products_cards .card a span {
+  display: inline-block;
+  margin-bottom: 6px;
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  color: #3d3d3d;
+  text-decoration: none;
+}
+
+.catalog .products .products_cards .card p span {
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #46a358;
+  text-decoration: none;
+  margin-right: 16px;
+}
+
+.catalog .products .products_cards .card div {
+  display: flex;
+}
+
+.catalog .products .products_cards .card div .old_price {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 89%;
+  color: #a5a5a5;
+  text-decoration: line-through;
+}
+
+.catalog .products .products_cards .card a {
+  text-decoration: none;
+}
+
+.catalog .products .products_cards .card a span:hover {
+  color: #46a358;
+  transition: 0.4s;
+}
+
+.catalog .products .pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.catalog .products .pagination ul {
+  display: flex;
+  gap: 10px;
+}
+
+.catalog .products .pagination ul li a {
+  display: flex;
+  width: 35px;
+  height: 35px;
+  border-radius: 4px;
+  border: 1px solid #e5e5e5;
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  transition: 0.4s;
+}
+
+.catalog .products .pagination ul li:hover a {
+  background: #46a358;
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #fff;
+  transition: 0.4s;
+}
+
+.catalog .products .pagination ul li:hover a svg path {
+  stroke: #fff;
+  transition: 0.4s;
+  stroke-width: 2.5;
+}
+
+/*# sourceMappingURL=catalog.css.map */

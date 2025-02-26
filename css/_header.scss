@@ -1,0 +1,238 @@
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.close-modal {
+  margin-left: 469px;
+  margin-top: 13px;
+}
+
+.dialog-wrapper {
+  max-width: 500px;
+  margin: auto;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 40px;
+
+    span {
+      color: #46A358;
+      margin-left: 13px;
+      border-left: 1px solid black;
+      padding-left: 13px;
+    }
+  }
+}
+
+.form-wrapper {
+  margin-left: 100px;
+
+  p {
+    margin-bottom: 14px;
+    text-align: left;
+  }
+}
+
+.input-text {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.input-email {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.input-password {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.input-confirm-password {
+  width: 300px;
+  height: 40px;
+  margin-bottom: 41px;
+}
+
+.btn {
+  width: 300px;
+  height: 45px;
+  margin-bottom: 36px;
+  padding: 16px 118px 13px 119px;
+  background-color: #46A358;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.text {
+  text-align: center;
+  margin-bottom: 27px;
+  color: #3D3D3D;
+}
+
+.reg-wrapper {
+  text-align: center;
+
+  a {
+    text-decoration: none;
+    color: #727272;
+  }
+}
+
+.google-reg-wrapper {
+  margin-bottom: 15px;
+}
+
+.google-reg-wrapper a {
+  text-decoration: none;
+  color: #727272;
+}
+
+header {
+  margin-bottom: 12px;
+  padding-top: 30px;
+
+  .login {
+    background: #46a358;
+    border-radius: 6px;
+    padding: 7px 17px;
+    display: flex;
+    align-items: center;
+    font-family: "cera_proregular", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+    transition: 0.4s;
+
+    svg {
+      margin-right: 4px;
+
+      path {
+        transition: 0.4s;
+      }
+    }
+
+    &:hover {
+      background-color: white;
+      color: #46A358;
+
+      svg path {
+        stroke: #46A358;
+      }
+    }
+  }
+
+  nav ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    gap: 50px;
+
+    li.drop:hover .dropdown {
+      display: block;
+    }
+
+    li a {
+      position: relative;
+      font-family: "cera_proregular", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      color: #3d3d3d;
+      text-decoration: none;
+
+      &:before {
+        content: '';
+        position: absolute;
+        bottom: -25px;
+        width: 0;
+        height: 2px;
+        background: #46A358;
+        display: block;
+        transition: 0.4s;
+      }
+
+      &:hover:before {
+        width: 100%;
+      }
+    }
+    li {
+      position: relative;
+
+      .dropdown {
+        display: none;
+        list-style: none;
+        position: absolute;
+        top: 10px;
+        left: -60px;
+        padding-top: 40px;
+
+        a {
+          display: inline-block;
+          width: 188px;
+          padding: 8px 14px;
+          background: #EDF6EE;
+          line-height: 20px;
+          font-family: 'cera_proregular', sans-serif;
+          font-weight: 400;
+          font-size: 16px;
+          color: #3d3d3d;
+          transition: 0.4s;
+          position: relative;
+
+          &:before {
+            display: none;
+          }
+
+          &:hover {
+            background: #1a712a;
+            color: white;
+          }
+
+          &:hover:after {
+            background-image: url("../images/arow_hover.svg");
+            transform: rotate(180deg);
+          }
+        }
+
+        .second_drop {
+          padding-right: 20px;
+
+          .second_dropdown {
+            display: none;
+
+            li a:after {
+              background-image: none;
+            }
+          }
+
+          &:hover .second_dropdown {
+            display: block;
+            position: absolute;
+            top: -108px;
+            left: 190px;
+          }
+        }
+      }
+
+      &:last-of-type a:after {
+        content: '';
+        display: block;
+        width: 7px;
+        height: 10px;
+        position: absolute;
+        right: 17px;
+        top: 12px;
+        background-image: url("../images/arow.svg");
+      }
+    }
+  }
+}

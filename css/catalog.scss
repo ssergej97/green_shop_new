@@ -1,0 +1,269 @@
+.catalog .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 94px;
+
+  h3 {
+    flex-basis: 310px;
+    margin-left: 18px;
+    margin-bottom: 7px;
+    font-family: "cera_probold", sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+  }
+
+  .categories {
+    max-width: 310px;
+    padding-top: 14px;
+    background-color: #fbfbfb;
+
+    ul {
+      margin-bottom: 377px;
+      margin-left: 30px;
+
+      li a {
+        text-decoration: none;
+        font-family: "cera_proregular", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 267%;
+        color: #3d3d3d;
+        transition: 0.4s;
+
+        &:hover {
+          font-weight: 700;
+          color: #46a358;
+          transition: 0.4s;
+        }
+      }
+    }
+  }
+
+  .products {
+    max-width: 840px;
+  }
+
+  .products_sorting {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 31px;
+
+    ul {
+      display: flex;
+
+      li a {
+        font-family: "cera_proregular", sans-serif;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 107%;
+        color: #3d3d3d;
+        transition: 0.4s;
+        text-decoration: none;
+        margin-right: 40px;
+
+        &:hover {
+          font-family: "cera_proregular", sans-serif;
+          font-weight: 700;
+          font-size: 15px;
+          line-height: 107%;
+          color: #46a358;
+          transition: 0.4s;
+          text-decoration: none;
+          border-bottom: 2px solid #46a358;
+          width: 65px;
+          height: 1px;
+        }
+      }
+    }
+
+    p {
+      font-family: "cera_proregular", sans-serif;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 107%;
+      color: #3d3d3d;
+    }
+  }
+
+  .products .products_cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 90px;
+  }
+
+  .card {
+    flex-basis: 258px;
+    margin-bottom: 70px;
+    border-top: 1px solid transparent;
+    position: relative;
+
+    ul {
+      display: flex;
+      position: relative;
+
+      li {
+        position: absolute;
+        left: 67px;
+        top: 260px;
+        padding: 6px 8px;
+        display: inline-block;
+        border-radius: 4px;
+        background: #fff;
+        opacity: 0;
+        transition: 0.4s;
+      }
+    }
+
+    &:hover ul li {
+      position: absolute;
+      left: 67px;
+      top: 260px;
+      padding: 6px 8px;
+      display: inline-block;
+      border-radius: 4px;
+      background: #fff;
+      opacity: 1;
+      transition: 0.4s;
+    }
+  }
+
+  .products {
+    .products_cards .card {
+      ul li {
+        &:hover svg path {
+          fill: #46A358;
+          transition: 0.4s;
+        }
+
+        svg path {
+          transition: 0.4s;
+        }
+
+        &:nth-child(2) {
+          margin-left: 45px;
+        }
+
+        &:nth-child(3) {
+          margin-left: 90px;
+        }
+      }
+
+      &:hover {
+        border-top: 1px solid #46A358;
+      }
+
+      .discount {
+        font-family: "cera_proregular", sans-serif;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 100%;
+        color: #fff;
+        background-color: #46A358;
+        padding: 6px 8px;
+        display: inline-block;
+        position: absolute;
+        left: 0;
+        top: 14px;
+      }
+
+      a img {
+        width: 258px;
+        margin-bottom: 12px;
+        background-color: #fbfbfb;
+      }
+
+      a span {
+        display: inline-block;
+        margin-bottom: 6px;
+        font-family: "cera_proregular", sans-serif;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 100%;
+        color: #3d3d3d;
+        text-decoration: none;
+      }
+
+      p span {
+        font-family: "cera_probold", sans-serif;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 89%;
+        color: #46a358;
+        text-decoration: none;
+        margin-right: 16px;
+      }
+
+      div {
+        display: flex;
+      }
+
+      div .old_price {
+        font-family: "cera_proregular", sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 89%;
+        color: #a5a5a5;
+        text-decoration: line-through;
+      }
+
+      a {
+        text-decoration: none;
+
+        span:hover {
+          color: #46a358;
+          transition: 0.4s;
+        }
+      }
+    }
+
+    .pagination {
+      display: flex;
+      justify-content: flex-end;
+
+      ul {
+        display: flex;
+        gap: 10px;
+
+        li {
+          a {
+            display: flex;
+            width: 35px;
+            height: 35px;
+            border-radius: 4px;
+            border: 1px solid #e5e5e5;
+            font-family: 'cera_proregular', sans-serif;
+            font-weight: 300;
+            font-size: 18px;
+            line-height: 89%;
+            color: #3d3d3d;
+            text-decoration: none;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            transition: 0.4s;
+          }
+
+          &:hover a {
+            background: #46a358;
+            font-family: 'cera_probold', sans-serif;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 89%;
+            color: #fff;
+            transition: 0.4s;
+          }
+
+          &:hover a svg path {
+            stroke: #fff;
+            transition: 0.4s;
+            stroke-width: 2.5;
+          }
+        }
+      }
+    }
+  }
+}
