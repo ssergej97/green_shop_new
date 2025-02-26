@@ -1,0 +1,130 @@
+.blog_posts {
+  .container {
+    display: block;
+    margin-bottom: 100px;
+
+    h2 {
+      font-family: 'cera_probold', sans-serif;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 53%;
+      text-align: center;
+      color: #3d3d3d;
+      margin-bottom: 15px;
+    }
+
+    p {
+      font-family: $font_family;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 171%;
+      text-align: center;
+      color: #727272;
+      margin-bottom: 35px;
+    }
+
+    .posts {
+      display: flex;
+      justify-content: space-between;
+
+      @include max-screen(360px) {
+        display: block;
+      }
+
+      .post {
+        max-width: 268px;
+        background: #fbfbfb;
+        padding-bottom: 13px;
+
+        @include max-screen(360px) {
+          text-align: center;
+          margin: auto;
+        }
+
+        img {
+          margin-bottom: 9px;
+          max-width: 268px;
+        }
+
+        h4 {
+          font-family: $font_family;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 114%;
+          color: $accent_color;
+          margin-bottom: 4px;
+          margin-left: 15px;
+        }
+
+        h3 {
+          font-family: 'cera_probold', sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 130%;
+          color: #3d3d3d;
+          margin-bottom: 4px;
+          margin-left: 15px;
+        }
+
+        p {
+          font-family: $font_family;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 157%;
+          color: #727272;
+          margin-bottom: 9px;
+          margin-left: 15px;
+          text-align: left;
+
+          @include max-screen(360px) {
+            text-align: center;
+          }
+        }
+
+        .btn_blog_post {
+          font-family: $font_family;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 114%;
+          color: #3d3d3d;
+          text-decoration: none;
+          margin-left: 15px;
+          transition: 0.4s;
+
+          &:hover {
+            font-family: $font_family;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 114%;
+            color: $accent_color;
+            transition: 0.4s;
+          }
+
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url('../images/Arrow_Right_Black.svg');
+            position: relative;
+            top: 5px;
+            margin-right: 3px;
+            transition: 0.4s;
+          }
+
+          &:hover:after {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            background-image: url('../images/Arrow_Right_Green.svg');
+            position: relative;
+            top: 5px;
+            margin-right: 3px;
+            transition: 0.4s;
+          }
+        }
+      }
+    }
+  }
+}

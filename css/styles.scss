@@ -1,7 +1,15 @@
+@import "reset";
 @import "fonts";
 @import "globals";
 @import "animation";
+@import "variables";
+@import "mixins";
+
+
 @import "header";
 @import "banner";
 @import "catalog";
 @import "promo";
+@import "blog_posts";
+@import "newsletter";
+@import "footer";

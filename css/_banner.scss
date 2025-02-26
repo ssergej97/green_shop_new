@@ -2,8 +2,18 @@
   padding-left: 40px;
   margin-bottom: 26px;
 
+  @include max-screen(360px) {
+    display: block;
+  }
+
+  article {
+    @include max-screen(360px) {
+      margin-bottom: 24px;
+    }
+  }
+
   h3 {
-    font-family: "cera_proregular", sans-serif;
+    font-family: $font_family;
     font-weight: 500;
     font-size: 14px;
     line-height: 114%;
@@ -23,12 +33,12 @@
     margin-bottom: 5px;
 
     span {
-      color: #46a358;
+      color: $accent_color;
     }
   }
 
   p {
-    font-family: "cera_proregular", sans-serif;
+    font-family: $font_family;
     font-weight: 400;
     font-size: 14px;
     line-height: 171%;
@@ -38,6 +48,10 @@
 
   img {
     max-width: 507px;
+
+    @include max-screen(360px) {
+      width: 100%;
+    }
   }
 
   .btn_shop {
@@ -48,7 +62,7 @@
     text-transform: uppercase;
     color: #fff;
     padding: 10px 26px;
-    background-color: #46a358;
+    background-color: $accent_color;
     text-decoration: none;
     border-radius: 6px;
     height: 40px;
@@ -56,7 +70,7 @@
 
     &:hover {
       background-color: white;
-      color: #46A358;
+      color: $accent_color;
     }
   }
 }

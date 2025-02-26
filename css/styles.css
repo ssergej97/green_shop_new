@@ -1,3 +1,57 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 @font-face {
   font-family: "cera_proregular";
   src: url("../fonts/regular/cerapro-regular-webfont.eot");
@@ -69,6 +123,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 360px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .close-modal {
@@ -161,8 +221,13 @@ header {
   margin-bottom: 12px;
   padding-top: 30px;
 }
+@media screen and (max-width: 360px) {
+  header {
+    margin-bottom: 32px;
+  }
+}
 header .login {
-  background: #46a358;
+  background: #46A358;
   border-radius: 6px;
   padding: 7px 17px;
   display: flex;
@@ -186,6 +251,11 @@ header .login:hover {
 }
 header .login:hover svg path {
   stroke: #46A358;
+}
+@media screen and (max-width: 360px) {
+  header nav {
+    display: none;
+  }
 }
 header nav ul {
   display: flex;
@@ -282,6 +352,16 @@ header nav ul li:last-of-type a:after {
   padding-left: 40px;
   margin-bottom: 26px;
 }
+@media screen and (max-width: 360px) {
+  .banner .container {
+    display: block;
+  }
+}
+@media screen and (max-width: 360px) {
+  .banner .container article {
+    margin-bottom: 24px;
+  }
+}
 .banner .container h3 {
   font-family: "cera_proregular", sans-serif;
   font-weight: 500;
@@ -302,7 +382,7 @@ header nav ul li:last-of-type a:after {
   margin-bottom: 5px;
 }
 .banner .container h1 span {
-  color: #46a358;
+  color: #46A358;
 }
 .banner .container p {
   font-family: "cera_proregular", sans-serif;
@@ -315,6 +395,11 @@ header nav ul li:last-of-type a:after {
 .banner .container img {
   max-width: 507px;
 }
+@media screen and (max-width: 360px) {
+  .banner .container img {
+    width: 100%;
+  }
+}
 .banner .container .btn_shop {
   font-family: "cera_probold", sans-serif;
   font-weight: 700;
@@ -323,7 +408,7 @@ header nav ul li:last-of-type a:after {
   text-transform: uppercase;
   color: #fff;
   padding: 10px 26px;
-  background-color: #46a358;
+  background-color: #46A358;
   text-decoration: none;
   border-radius: 6px;
   height: 40px;
@@ -340,6 +425,11 @@ header nav ul li:last-of-type a:after {
   align-items: flex-start;
   margin-bottom: 94px;
 }
+@media screen and (max-width: 360px) {
+  .catalog .container {
+    display: block;
+  }
+}
 .catalog .container h3 {
   flex-basis: 310px;
   margin-left: 18px;
@@ -354,6 +444,16 @@ header nav ul li:last-of-type a:after {
   max-width: 310px;
   padding-top: 14px;
   background-color: #fbfbfb;
+}
+@media screen and (max-width: 360px) {
+  .catalog .container .categories {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 360px) {
+  .catalog .container .categories img {
+    margin-bottom: 16px;
+  }
 }
 .catalog .container .categories ul {
   margin-bottom: 377px;
@@ -370,7 +470,7 @@ header nav ul li:last-of-type a:after {
 }
 .catalog .container .categories ul li a:hover {
   font-weight: 700;
-  color: #46a358;
+  color: #46A358;
   transition: 0.4s;
 }
 .catalog .container .products {
@@ -381,8 +481,18 @@ header nav ul li:last-of-type a:after {
   justify-content: space-between;
   margin-bottom: 31px;
 }
+@media screen and (max-width: 360px) {
+  .catalog .container .products_sorting {
+    display: block;
+  }
+}
 .catalog .container .products_sorting ul {
   display: flex;
+}
+@media screen and (max-width: 360px) {
+  .catalog .container .products_sorting ul {
+    margin-bottom: 8px;
+  }
 }
 .catalog .container .products_sorting ul li a {
   font-family: "cera_proregular", sans-serif;
@@ -399,10 +509,10 @@ header nav ul li:last-of-type a:after {
   font-weight: 700;
   font-size: 15px;
   line-height: 107%;
-  color: #46a358;
+  color: #46A358;
   transition: 0.4s;
   text-decoration: none;
-  border-bottom: 2px solid #46a358;
+  border-bottom: 2px solid #46A358;
   width: 65px;
   height: 1px;
 }
@@ -419,11 +529,27 @@ header nav ul li:last-of-type a:after {
   justify-content: space-between;
   margin-bottom: 90px;
 }
+@media screen and (max-width: 360px) {
+  .catalog .container .products .products_cards {
+    display: block;
+  }
+}
 .catalog .container .card {
   flex-basis: 258px;
   margin-bottom: 70px;
   border-top: 1px solid transparent;
   position: relative;
+}
+@media screen and (max-width: 360px) {
+  .catalog .container .card {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 360px) {
+  .catalog .container .card div {
+    justify-content: center;
+  }
 }
 .catalog .container .card ul {
   display: flex;
@@ -467,6 +593,11 @@ header nav ul li:last-of-type a:after {
 .catalog .container .products .products_cards .card:hover {
   border-top: 1px solid #46A358;
 }
+@media screen and (max-width: 360px) {
+  .catalog .container .products .products_cards .card:hover ul li {
+    left: 100px;
+  }
+}
 .catalog .container .products .products_cards .card .discount {
   font-family: "cera_proregular", sans-serif;
   font-weight: 500;
@@ -479,6 +610,12 @@ header nav ul li:last-of-type a:after {
   position: absolute;
   left: 0;
   top: 14px;
+}
+@media screen and (max-width: 360px) {
+  .catalog .container .products .products_cards .card .discount {
+    left: 36px;
+    top: 2px;
+  }
 }
 .catalog .container .products .products_cards .card a img {
   width: 258px;
@@ -500,7 +637,7 @@ header nav ul li:last-of-type a:after {
   font-weight: 700;
   font-size: 18px;
   line-height: 89%;
-  color: #46a358;
+  color: #46A358;
   text-decoration: none;
   margin-right: 16px;
 }
@@ -519,7 +656,7 @@ header nav ul li:last-of-type a:after {
   text-decoration: none;
 }
 .catalog .container .products .products_cards .card a span:hover {
-  color: #46a358;
+  color: #46A358;
   transition: 0.4s;
 }
 .catalog .container .products .pagination {
@@ -548,7 +685,7 @@ header nav ul li:last-of-type a:after {
   transition: 0.4s;
 }
 .catalog .container .products .pagination ul li:hover a {
-  background: #46a358;
+  background: #46A358;
   font-family: "cera_probold", sans-serif;
   font-weight: 700;
   font-size: 18px;
@@ -567,7 +704,11 @@ header nav ul li:last-of-type a:after {
   justify-content: space-between;
   margin-bottom: 138px;
 }
-
+@media screen and (max-width: 360px) {
+  .promo .container {
+    display: block;
+  }
+}
 .promo .container .promo_products {
   display: flex;
   justify-content: space-between;
@@ -577,21 +718,41 @@ header nav ul li:last-of-type a:after {
   max-width: 586px;
   height: 250px;
 }
-
+@media screen and (max-width: 360px) {
+  .promo .container .promo_products {
+    display: block;
+    text-align: center;
+    padding-right: 0;
+    width: 100%;
+    height: auto;
+  }
+}
 .promo .container .promo_products img {
   position: relative;
   top: -22px;
   width: 274px;
   height: 292px;
 }
-
+@media screen and (max-width: 360px) {
+  .promo .container .promo_products img {
+    position: static;
+    height: auto;
+    width: 100%;
+  }
+}
 .promo .container .promo_products .promo_product {
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   max-width: 292px;
 }
-
+@media screen and (max-width: 360px) {
+  .promo .container .promo_products .promo_product {
+    display: block;
+    text-align: center;
+    margin: 0 auto 28px;
+  }
+}
 .promo .container .promo_products .promo_product h3 {
   font-family: "cera_problack", sans-serif;
   font-weight: 900;
@@ -602,7 +763,11 @@ header nav ul li:last-of-type a:after {
   color: #3d3d3d;
   margin-bottom: 9px;
 }
-
+@media screen and (max-width: 360px) {
+  .promo .container .promo_products .promo_product h3 {
+    text-align: center;
+  }
+}
 .promo .container .promo_products .promo_product p {
   font-family: "cera_proregular", sans-serif;
   font-weight: 400;
@@ -612,26 +777,28 @@ header nav ul li:last-of-type a:after {
   color: #727272;
   margin-bottom: 25px;
 }
-
+@media screen and (max-width: 360px) {
+  .promo .container .promo_products .promo_product p {
+    text-align: center;
+  }
+}
 .promo .container .promo_products .promo_product .btn_find_more {
   font-family: "cera_proregular", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 143%;
   color: #fff;
-  background: #46a358;
+  background: #46A358;
   border-radius: 6px;
   padding: 10px 28px;
   text-decoration: none;
   transition: 0.4s;
 }
-
 .promo .container .promo_products .promo_product .btn_find_more:hover {
   background-color: white;
   color: #46A358;
   transition: 0.4s;
 }
-
 .promo .container .promo_products .promo_product .btn_find_more:after {
   content: "";
   display: inline-block;
@@ -643,7 +810,6 @@ header nav ul li:last-of-type a:after {
   margin-left: 2px;
   transition: 0.4s;
 }
-
 .promo .container .promo_products .promo_product .btn_find_more:hover:after {
   content: "";
   display: inline-block;
@@ -654,6 +820,378 @@ header nav ul li:last-of-type a:after {
   top: 4px;
   margin-left: 2px;
   transition: 0.4s;
+}
+
+.blog_posts .container {
+  display: block;
+  margin-bottom: 100px;
+}
+.blog_posts .container h2 {
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 53%;
+  text-align: center;
+  color: #3d3d3d;
+  margin-bottom: 15px;
+}
+.blog_posts .container p {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  text-align: center;
+  color: #727272;
+  margin-bottom: 35px;
+}
+.blog_posts .container .posts {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 360px) {
+  .blog_posts .container .posts {
+    display: block;
+  }
+}
+.blog_posts .container .posts .post {
+  max-width: 268px;
+  background: #fbfbfb;
+  padding-bottom: 13px;
+}
+@media screen and (max-width: 360px) {
+  .blog_posts .container .posts .post {
+    text-align: center;
+    margin: auto;
+  }
+}
+.blog_posts .container .posts .post img {
+  margin-bottom: 9px;
+  max-width: 268px;
+}
+.blog_posts .container .posts .post h4 {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: #46A358;
+  margin-bottom: 4px;
+  margin-left: 15px;
+}
+.blog_posts .container .posts .post h3 {
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 130%;
+  color: #3d3d3d;
+  margin-bottom: 4px;
+  margin-left: 15px;
+}
+.blog_posts .container .posts .post p {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #727272;
+  margin-bottom: 9px;
+  margin-left: 15px;
+  text-align: left;
+}
+@media screen and (max-width: 360px) {
+  .blog_posts .container .posts .post p {
+    text-align: center;
+  }
+}
+.blog_posts .container .posts .post .btn_blog_post {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: #3d3d3d;
+  text-decoration: none;
+  margin-left: 15px;
+  transition: 0.4s;
+}
+.blog_posts .container .posts .post .btn_blog_post:hover {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 114%;
+  color: #46A358;
+  transition: 0.4s;
+}
+.blog_posts .container .posts .post .btn_blog_post:after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/Arrow_Right_Black.svg");
+  position: relative;
+  top: 5px;
+  margin-right: 3px;
+  transition: 0.4s;
+}
+.blog_posts .container .posts .post .btn_blog_post:hover:after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-image: url("../images/Arrow_Right_Green.svg");
+  position: relative;
+  top: 5px;
+  margin-right: 3px;
+  transition: 0.4s;
+}
+
+.newsletter .container {
+  background: #fbfbfb;
+  padding: 24px;
+  gap: 60px;
+}
+@media screen and (max-width: 360px) {
+  .newsletter .container {
+    display: block;
+  }
+}
+.newsletter .container .card {
+  position: relative;
+}
+@media screen and (max-width: 360px) {
+  .newsletter .container .card {
+    text-align: center;
+    margin-bottom: 36px;
+  }
+}
+.newsletter .container .card img {
+  margin-bottom: 15px;
+}
+.newsletter .container .card .vertical_line {
+  width: 1px;
+  height: 187px;
+  background: rgba(70, 163, 88, 0.1);
+  position: absolute;
+  left: -27px;
+}
+.newsletter .container .card h3 {
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 94%;
+  color: #3d3d3d;
+  margin-bottom: 9px;
+}
+.newsletter .container .card p {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #727272;
+}
+.newsletter .container .sign_up_newsletter h3 {
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  margin-bottom: 25px;
+}
+.newsletter .container .sign_up_newsletter form {
+  display: flex;
+  margin-bottom: 18px;
+}
+.newsletter .container .sign_up_newsletter form input {
+  border-radius: 6px 0 0 6px;
+  width: 270px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+  background: #fff;
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 114%;
+  color: #acacac;
+  border: none;
+  padding: 12px 0 12px 12px;
+}
+.newsletter .container .sign_up_newsletter form input:focus {
+  outline: none;
+}
+.newsletter .container .sign_up_newsletter form button {
+  border-radius: 0 6px 6px 0;
+  background: #46A358;
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #fff;
+  border: none;
+  padding: 12px 26px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.newsletter .container .sign_up_newsletter form button:hover {
+  background-color: #fff;
+  color: #46A358;
+  border: 1px solid #46A358;
+}
+.newsletter .container .sign_up_newsletter p {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 169%;
+  color: #727272;
+}
+
+footer .container {
+  display: block;
+}
+footer .container .upper_footer {
+  display: flex;
+  padding: 26px 0 26px 23px;
+  gap: 92px;
+  background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+  width: 100%;
+  align-items: center;
+  border-top: 1px solid rgba(70, 163, 88, 0.2);
+  border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+}
+@media screen and (max-width: 360px) {
+  footer .container .upper_footer {
+    display: block;
+  }
+}
+@media screen and (max-width: 360px) {
+  footer .container .upper_footer img {
+    margin-bottom: 10px;
+  }
+}
+footer .container .upper_footer p {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 157%;
+  color: #3d3d3d;
+}
+@media screen and (max-width: 360px) {
+  footer .container .upper_footer p {
+    text-align: left;
+  }
+}
+footer .container .upper_footer p:nth-of-type(1):before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/Location.svg");
+  position: relative;
+  transition: 0.4s;
+  top: 15px;
+  left: -9px;
+}
+@media screen and (max-width: 360px) {
+  footer .container .upper_footer p:nth-of-type(1):before {
+    top: 7px;
+    left: -2px;
+  }
+}
+footer .container .upper_footer p:nth-of-type(2):before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/Message.svg");
+  position: relative;
+  transition: 0.4s;
+  top: 7px;
+  left: -5px;
+}
+@media screen and (max-width: 360px) {
+  footer .container .upper_footer p:nth-of-type(2):before {
+    left: -2px;
+  }
+}
+footer .container .upper_footer p:nth-of-type(3):before {
+  content: "";
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/Calling.svg");
+  position: relative;
+  transition: 0.4s;
+  top: 5px;
+  left: -5px;
+}
+@media screen and (max-width: 360px) {
+  footer .container .upper_footer p:nth-of-type(3):before {
+    left: -2px;
+  }
+}
+footer .container .bottom_footer {
+  display: flex;
+  padding: 33px 0 27px 23px;
+  background: #fbfbfb;
+  gap: 166px;
+  margin-bottom: 6px;
+  border-bottom: 1px solid rgba(70, 163, 88, 0.2);
+}
+@media screen and (max-width: 360px) {
+  footer .container .bottom_footer {
+    display: block;
+  }
+}
+@media screen and (max-width: 360px) {
+  footer .container .bottom_footer .list {
+    margin-bottom: 24px;
+  }
+}
+footer .container .bottom_footer h3 {
+  font-family: "cera_probold", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 89%;
+  color: #3d3d3d;
+  margin-bottom: 9px;
+}
+footer .container .bottom_footer ul li a {
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 214%;
+  color: #3d3d3d;
+  text-decoration: none;
+}
+footer .container .bottom_footer svg {
+  margin-right: 10px;
+}
+footer .container .bottom_footer .social_media h3 {
+  margin-bottom: 20px;
+}
+footer .container .bottom_footer .social_media h3:nth-of-type(2) {
+  margin-bottom: 13px;
+}
+footer .container .bottom_footer .social_media .icons {
+  display: flex;
+  margin-bottom: 33px;
+}
+footer .container .bottom_footer .social_media .icons li a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+footer .container .bottom_footer .social_media .icons li a:hover svg {
+  fill: #46A358;
+}
+footer .container .bottom_footer .social_media .icons li a:hover svg rect {
+  stroke: #fff;
+}
+footer .container .bottom_footer .social_media .icons li a:hover svg path {
+  fill: #fff;
+}
+footer .container p {
+  text-align: center;
+  font-family: "cera_proregular", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 214%;
+  color: #3d3d3d;
+  margin-bottom: 13px;
 }
 
 /*# sourceMappingURL=styles.css.map */

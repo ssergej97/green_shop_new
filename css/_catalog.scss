@@ -4,6 +4,10 @@
   align-items: flex-start;
   margin-bottom: 94px;
 
+  @include max-screen(360px) {
+    display: block;
+  }
+
   h3 {
     flex-basis: 310px;
     margin-left: 18px;
@@ -20,6 +24,16 @@
     padding-top: 14px;
     background-color: #fbfbfb;
 
+    @include max-screen(360px) {
+      width: 100%;
+    }
+
+    img {
+      @include max-screen(360px) {
+        margin-bottom: 16px;
+      }
+    }
+
     ul {
       margin-bottom: 377px;
       margin-left: 30px;
@@ -35,7 +49,7 @@
 
         &:hover {
           font-weight: 700;
-          color: #46a358;
+          color: $accent_color;
           transition: 0.4s;
         }
       }
@@ -51,8 +65,16 @@
     justify-content: space-between;
     margin-bottom: 31px;
 
+    @include max-screen(360px) {
+      display: block;
+    }
+
     ul {
       display: flex;
+
+      @include max-screen(360px) {
+        margin-bottom: 8px;
+      }
 
       li a {
         font-family: "cera_proregular", sans-serif;
@@ -69,10 +91,10 @@
           font-weight: 700;
           font-size: 15px;
           line-height: 107%;
-          color: #46a358;
+          color: $accent_color;
           transition: 0.4s;
           text-decoration: none;
-          border-bottom: 2px solid #46a358;
+          border-bottom: 2px solid $accent_color;
           width: 65px;
           height: 1px;
         }
@@ -93,6 +115,10 @@
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: 90px;
+
+    @include max-screen(360px) {
+      display: block;
+    }
   }
 
   .card {
@@ -100,6 +126,17 @@
     margin-bottom: 70px;
     border-top: 1px solid transparent;
     position: relative;
+
+    @include max-screen(360px) {
+      max-width: 100%;
+      text-align: center;
+    }
+
+    div {
+      @include max-screen(360px) {
+        justify-content: center;
+      }
+    }
 
     ul {
       display: flex;
@@ -135,7 +172,7 @@
     .products_cards .card {
       ul li {
         &:hover svg path {
-          fill: #46A358;
+          fill: $accent_color;
           transition: 0.4s;
         }
 
@@ -153,7 +190,13 @@
       }
 
       &:hover {
-        border-top: 1px solid #46A358;
+        border-top: 1px solid $accent_color;
+
+        ul li {
+          @include max-screen(360px) {
+            left: 100px;
+          }
+        }
       }
 
       .discount {
@@ -162,12 +205,17 @@
         font-size: 16px;
         line-height: 100%;
         color: #fff;
-        background-color: #46A358;
+        background-color: $accent_color;
         padding: 6px 8px;
         display: inline-block;
         position: absolute;
         left: 0;
         top: 14px;
+
+        @include max-screen(360px) {
+          left: 36px;
+          top: 2px;
+        }
       }
 
       a img {
@@ -192,7 +240,7 @@
         font-weight: 700;
         font-size: 18px;
         line-height: 89%;
-        color: #46a358;
+        color: $accent_color;
         text-decoration: none;
         margin-right: 16px;
       }
@@ -214,7 +262,7 @@
         text-decoration: none;
 
         span:hover {
-          color: #46a358;
+          color: $accent_color;
           transition: 0.4s;
         }
       }
@@ -235,7 +283,7 @@
             height: 35px;
             border-radius: 4px;
             border: 1px solid #e5e5e5;
-            font-family: 'cera_proregular', sans-serif;
+            font-family: $font_family;
             font-weight: 300;
             font-size: 18px;
             line-height: 89%;
@@ -248,7 +296,7 @@
           }
 
           &:hover a {
-            background: #46a358;
+            background: $accent_color;
             font-family: 'cera_probold', sans-serif;
             font-weight: 700;
             font-size: 18px;
