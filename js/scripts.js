@@ -3,6 +3,7 @@ $('.owl-carousel').owlCarousel({
     autoplayTimeout: 6500,
     autoplaySpeed: 1000,
     loop: true,
+    nav: true,
     responsive:{
         0:{
             items:1
@@ -13,3 +14,7 @@ $('.owl-carousel').owlCarousel({
     }
 
 })
+
+$( function() {
+    $( "#accordion" ).accordion();
+} );

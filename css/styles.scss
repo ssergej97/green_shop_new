@@ -13,3 +13,14 @@
 @import "blog_posts";
 @import "newsletter";
 @import "footer";
+
+.ui-accordion .ui-accordion-header {
+  padding: 20px 76px 20px 44px;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.25;
+  margin-bottom: 16px;
+  border: 1px solid #242424;
+  border-radius: 8px;
+  background-color: transparent;
+}
