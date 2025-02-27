@@ -716,7 +716,7 @@ header nav ul li:last-of-type a:after {
   background: #fbfbfb;
   padding-right: 30px;
   max-width: 586px;
-  height: 250px;
+  height: 375px;
 }
 @media screen and (max-width: 360px) {
   .promo .container .promo_products {
